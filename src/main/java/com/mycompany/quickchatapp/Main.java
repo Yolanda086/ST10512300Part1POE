@@ -70,7 +70,7 @@ public class Main {
         } else {
             System.out.println("Registration failed. Please restart the application and try again.");
         }
-
+        // Close the scanner
         scanner.close();
     }
 }
