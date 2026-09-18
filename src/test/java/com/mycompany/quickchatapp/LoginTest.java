@@ -32,11 +32,13 @@ public class LoginTest {
     @Test
     // Verify valid username format passes
     public void testCheckUserName_Valid() {
+        // Test Data: "kyl_1"
         assertTrue(login.checkUserName("kyl_1"));
     }
 
     @Test 
     public void testCheckUserName_Invalid() {
+        // Test Data: "kyle!!!!!!"
         assertFalse(login.checkUserName("kyle!!!!!!!"));
     }
 
