@@ -77,6 +77,15 @@ public class Message {
     public static int returnTotalMessages() {
         return totalMessagesSent;
     }
+    /**
+     * Stores the message in a JSON file.
+     * 
+     * REFERENCE / ATTRIBUTION:
+     * [1] Oracle, "Class FileWriter," Java SE 24 & JDK 24 API Specification, 2025. 
+     *     [Online]. Available: https://docs.oracle.com/en/java/javase/24/docs/api/java.base/java/io/FileWriter.html
+     * [2] JSON.org, "Class JSONObject," JSON in Java, 2024. 
+     *     [Online]. Available: https://svn.apache.org/repos/asf/zest/site/content/java/1.4.1/javadocs/org/json/JSONObject.html
+     */
 
     public void storeMessage() {
         JSONObject jsonObject = new JSONObject();
