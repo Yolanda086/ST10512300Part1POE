@@ -1,4 +1,4 @@
-# ST10512300Part1POE
+# ST10512300Part2POE
 # QuickChatApp - PROG5121 Part 1 and Part 2
 
  ## PART 1
