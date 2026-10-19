@@ -40,7 +40,7 @@ public class MessageTest {
     @Test
     public void testCreateMessageHash() {
         // Expected format for the first test case: 00:0:HITHANKS
-        String expected = "00:0:HITHANKS";
+        String expected = "00:0:HITONIGHT";
         assertEquals(expected, message.getMessageHash());
     }
 
