@@ -42,8 +42,9 @@ public class Message {
         if (messageText == null || messageText.trim().isEmpty()) return "";
         String firstTwoID = messageID.substring(0, 2);
         String[] words = messageText.trim().split("\\s+");
-        String firstWord = words[0];
-        String lastWord = words[words.length - 1];
+        String firstWord = words[0].replaceAll("\\p{Punct}", "");
+        // Remove punctuation mark
+        String lastWord = words[words.length - 1].replaceAll("\\p{Punct}", "");
         return (firstTwoID + ":" + messageNumber + ":" + firstWord + lastWord).toUpperCase();
     }
 
